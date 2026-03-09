@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Birthday for Seiko Ichikawa</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-size: 3em;
+            margin-top: 20px;
+        }
+        .heart {
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transform: rotate(-45deg);
+            animation: float 4s linear infinite;
+        }
+        .heart::before, .heart::after {
+            content: '';
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .heart::before {
+            top: -50px;
+            left: 0;
+            width: 100px;
+            height: 100px;
+        }
+        .heart::after {
+            left: 50px;
+            top: 0;
+            width: 100px;
+            height: 100px;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .gallery img {
+            margin: 10px;
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+        }
+        .love-letter {
+            margin-top: 50px;
+            font-size: 1.5em;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Birthday Seiko Ichikawa!</h1>
+    <div class="heart"></div>
+    <div class="heart" style="left: 20%; animation-duration: 4.5s;"></div>
+    <div class="heart" style="left: 40%; animation-duration: 5s;"></div>
+    <div class="heart" style="left: 60%; animation-duration: 4.2s;"></div>
+    <div class="heart" style="left: 80%; animation-duration: 4.7s;"></div>
+    <div class="gallery">
+        <img src="photo1.jpg" alt="Album photo 1">
+        <img src="photo2.jpg" alt="Album photo 2">
+        <img src="photo3.jpg" alt="Album photo 3">
+    </div>
+    <div class="love-letter">
+        <p>My dearest Seiko,</p>
+        <p>On this special day, I wish you joy and happiness. May each moment be filled with love and laughter.</p>
+        <p>With all my love,</p>
+        <p>Your Secret Admirer</p>
+    </div>
+</body>
+</html>
